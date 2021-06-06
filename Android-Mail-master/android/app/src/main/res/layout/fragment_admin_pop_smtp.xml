@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment"
+    android:background="#A9A9A9"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border_bottom_1px_graydark"
+        >
+
+        <TextView
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textSize="16dp"
+            android:textColor="#FA04DD"
+            android:text="取消"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="邮件服务器设置"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:paddingVertical="15dp"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/button_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textColor="#0F85DF"
+            android:textSize="16dp"
+            android:text="完成"></TextView>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:text="  域名&#12288;&#12288;&#12288;"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/domain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingVertical="10dp"
+                    android:singleLine="true"
+                    android:text="hun.edu.cn"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:text="  邮箱大小&#12288;"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/maxMail"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingVertical="10dp"
+                    android:singleLine="true"
+                    android:text="    ∞"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:text="M"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom_1px"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:text="收件服务器"
+                android:textSize="16dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:text="  端口&#12288;&#12288;&#12288;"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/pop_port"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingVertical="10dp"
+                    android:singleLine="true"
+                    android:text="110"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom_1px"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:text="发件服务器"
+                android:textSize="16dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:text="  端口&#12288;&#12288;&#12288;"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/smtp_port"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingVertical="10dp"
+                    android:singleLine="true"
+                    android:text="25"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:text="  最大转发&#12288;"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/max_receiver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingVertical="10dp"
+                    android:singleLine="true"
+                    android:text="10"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"></EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

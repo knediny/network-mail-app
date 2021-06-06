@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment"
+    android:background="#A9A9A9"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/button_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_left_arrow"
+            >
+        </ImageView>
+        <TextView
+            android:id="@+id/button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingHorizontal="15dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#0F85DF"
+            android:text="完成"
+            >
+        </TextView>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="#e8e8e8"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:text="      姓名  👉"></TextView>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint=" 请输入姓名"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#e8e8e8"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:text="邮箱地址  👉"></TextView>
+
+            <EditText
+                android:id="@+id/mail_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint=" 请输入邮箱地址"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp">
+
+            </EditText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
