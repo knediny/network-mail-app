@@ -1,3 +1,5 @@
-# HNU computer network APP 
+# HNU computer network mail APP
 
-first version for check before acceptance
+it is just save for check before acceptance, maybe it is the first version.
+
+of course, it will be the last version if possible.
