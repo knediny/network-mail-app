@@ -8,8 +8,8 @@
     android:layout_height="50dp"
     android:layout_marginTop="5dp"
     android:layout_marginBottom="5dp"
-    android:textColor="#050505"
-    android:background="#A9A9A9"
+    android:textColor="#FFFFFF"
+    android:background="#55000000"
     android:textSize="14dp"
     android:paddingVertical="10dp"
     android:ellipsize="marquee" />

@@ -3,14 +3,14 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/fragment"
-    android:background="#A9A9A9"
+    android:background="@drawable/main"
     >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@drawable/border_bottom_1px_graydark"
+        android:background="@drawable/border_bottom_1px"
         >
 
         <TextView
@@ -18,9 +18,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="15dp"
-            android:textSize="16dp"
-            android:textColor="#FA04DD"
-            android:text="取消"></TextView>
+            android:text="取消"
+            android:textColor="#FC0000"
+            android:textSize="16dp"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,9 +55,19 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="25dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"></LinearLayout>
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom_1px"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:text="基础设置"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16dp">
+            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -80,6 +90,7 @@
                     android:layout_weight="1"
                     android:background="@null"
                     android:paddingVertical="10dp"
+                    android:paddingLeft="5dp"
                     android:singleLine="true"
                     android:text="hun.edu.cn"
                     android:textColor="#FFFFFF"
@@ -113,7 +124,8 @@
                     android:maxLength="5"
                     android:paddingVertical="10dp"
                     android:singleLine="true"
-                    android:text="    ∞"
+                    android:paddingLeft="10dp"
+                    android:text="∞"
                     android:textColor="#FFFFFF"
                     android:textSize="16dp">
 
@@ -137,8 +149,9 @@
                 android:paddingTop="15dp"
                 android:paddingBottom="10dp"
                 android:text="收件服务器"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
                 android:textSize="16dp">
-
             </TextView>
 
             <LinearLayout
@@ -181,7 +194,10 @@
                 android:paddingTop="15dp"
                 android:paddingBottom="10dp"
                 android:text="发件服务器"
-                android:textSize="16dp">
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                >
 
             </TextView>
 

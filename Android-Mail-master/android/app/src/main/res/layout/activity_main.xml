@@ -9,20 +9,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#ffffff"
+        android:background="@drawable/main"
         ></LinearLayout>
 
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/menu"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="353dp"
+        android:layout_height="627dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="2dp"
         android:layout_marginBottom="10dp"
         fab:menu_animationDelayPerItem="50"
-        fab:menu_backgroundColor="@android:color/transparent"
         fab:menu_buttonSpacing="0dp"
         fab:menu_colorNormal="#FFFFFF"
         fab:menu_colorPressed="#e8e8e8"

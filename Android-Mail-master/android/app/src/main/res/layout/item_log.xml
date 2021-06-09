@@ -14,7 +14,10 @@
             android:layout_height="wrap_content"
             android:paddingHorizontal="15dp"
             android:paddingVertical="15dp"
-            android:text="2021-05-22 16:44:00"></TextView>
+            android:text="2021-05-22 16:44:00"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            ></TextView>
 
         <TextView
             android:id="@+id/log"
@@ -22,6 +25,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:paddingVertical="15dp"
-            android:text="服务器启动~"></TextView>
+            android:text="服务器启动~"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            ></TextView>
     </LinearLayout>
 </LinearLayout>

@@ -4,38 +4,38 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:fab="http://schemas.android.com/tools"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/main"
+    >
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center"
-        android:background="#A9A9A9"
-        >
+        android:gravity="center">
         <!-- 加载中动画 -->
         <LinearLayout
             android:id="@+id/top_loading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:paddingTop="5dp"
-            android:paddingBottom="15dp"
             android:gravity="center"
             android:orientation="horizontal"
-            android:background="#A9A9A9"
-            >
+            android:paddingTop="5dp"
+            android:paddingBottom="15dp">
+
             <ProgressBar
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:indeterminate="false"
-                android:indeterminateDrawable="@drawable/loading">
-            </ProgressBar>
+                android:indeterminateDrawable="@drawable/loading"></ProgressBar>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="10dp"
-                android:textSize="18dp"
+                android:text="收取中"
                 android:textColor="#FFFFFF"
-                android:text="收取中"></TextView>
+                android:textSize="18dp"></TextView>
         </LinearLayout>
         <!-- 邮箱地址 -->
         <TextView
@@ -45,19 +45,21 @@
             android:layout_centerInParent="true"
             android:paddingTop="5dp"
             android:paddingBottom="15dp"
-            android:visibility="gone"
+            android:text="邮箱"
+            android:textColor="#FFFFFF"
             android:textSize="18dp"
-            android:textColor="#000000"
-            android:text="邮箱"></TextView>
-<!--        <ImageView-->
-<!--            android:id="@+id/button_create"-->
-<!--            android:layout_width="30dp"-->
-<!--            android:layout_height="30dp"-->
-<!--            android:layout_centerInParent="true"-->
-<!--            android:layout_alignParentRight="true"-->
-<!--            android:layout_marginRight="10dp"-->
-<!--            android:src="@drawable/ic_plus"></ImageView>-->
+            android:textStyle="bold"
+            android:visibility="gone"></TextView>
+        <!--        <ImageView-->
+        <!--            android:id="@+id/button_create"-->
+        <!--            android:layout_width="30dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:src="@drawable/ic_plus"></ImageView>-->
     </RelativeLayout>
+
     <in.srain.cube.views.ptr.PtrClassicFrameLayout
         android:id="@+id/ptr_frame"
         android:orientation="vertical"
@@ -67,7 +69,6 @@
         app:ptr_resistance="1.7"
         app:ptr_ratio_of_header_height_to_refresh="1.2"
         app:ptr_keep_header_when_refresh="true"
-        android:background="#A9A9A9"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -90,7 +91,6 @@
                     android:paddingHorizontal="15dp"
                     android:paddingVertical="12dp"
                     android:src="@drawable/ic_inbox"
-                    android:background="#A9A9A9"
                     ></ImageView>
 
                 <LinearLayout
@@ -107,17 +107,17 @@
                         android:textSize="15dp"
                         android:textColor="#FFFFFF"
                         android:gravity="center|left"
-                        android:background="#A9A9A9"
                         ></TextView>
 
                     <TextView
                         android:id="@+id/inbox_count"
-                        android:layout_width="wrap_content"
+                        android:layout_width="39dp"
                         android:layout_height="match_parent"
+                        android:gravity="center"
                         android:text="0"
                         android:textSize="15dp"
-                        android:gravity="center"
-                        android:background="#A9A9A9"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
                         ></TextView>
 
                     <ImageView
@@ -125,7 +125,6 @@
                         android:layout_height="match_parent"
                         android:paddingVertical="18dp"
                         android:src="@drawable/ic_right_arrow"
-                        android:background="#A9A9A9"
                         ></ImageView>
                 </LinearLayout>
             </LinearLayout>
@@ -134,7 +133,6 @@
                 android:id="@+id/user_inbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#A9A9A9"
                 >
 
             </androidx.recyclerview.widget.RecyclerView>
@@ -153,7 +151,6 @@
                     android:paddingHorizontal="15dp"
                     android:paddingVertical="12dp"
                     android:src="@drawable/ic_flag_star"
-                    android:background="#A9A9A9"
                     ></ImageView>
 
                 <LinearLayout
@@ -166,7 +163,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="#A9A9A9"
                         android:gravity="center|left"
                         android:paddingVertical="10dp"
                         android:text="收藏夹"
@@ -175,12 +171,13 @@
 
                     <TextView
                         android:id="@+id/flag_mail_count"
-                        android:layout_width="wrap_content"
+                        android:layout_width="38dp"
                         android:layout_height="match_parent"
+                        android:gravity="center"
                         android:text="0"
                         android:textSize="15dp"
-                        android:gravity="center"
-                        android:background="#A9A9A9"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
                         ></TextView>
 
                     <ImageView
@@ -188,7 +185,6 @@
                         android:layout_height="match_parent"
                         android:paddingVertical="18dp"
                         android:src="@drawable/ic_right_arrow"
-                        android:background="#A9A9A9"
                         ></ImageView>
                 </LinearLayout>
             </LinearLayout>
@@ -202,16 +198,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="15dp"
-                    android:background="#A9A9A9"
                     >
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="工具"
-                        android:textSize="12dp"
-                        android:textColor="#666666"
-                        android:paddingVertical="2dp"
-                        ></TextView>
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="工具"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textColor="#FFFFFF"-->
+<!--                        android:paddingVertical="2dp"-->
+<!--                        ></TextView>-->
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/contact"
@@ -227,7 +223,6 @@
                         android:paddingHorizontal="15dp"
                         android:paddingVertical="10dp"
                         android:src="@drawable/ic_contact"
-                        android:background="#A9A9A9"
                         ></ImageView>
 
                     <LinearLayout
@@ -244,7 +239,6 @@
                             android:textColor="#FFFFFF"
                             android:textSize="15dp"
                             android:gravity="center|left"
-                            android:background="#A9A9A9"
                             ></TextView>
 
 
@@ -253,7 +247,6 @@
                             android:layout_height="match_parent"
                             android:paddingVertical="18dp"
                             android:src="@drawable/ic_right_arrow"
-                            android:background="#A9A9A9"
                             ></ImageView>
                     </LinearLayout>
                 </LinearLayout>
@@ -268,24 +261,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="15dp"
-                    android:background="#A9A9A9"
                     >
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="账户"
-                        android:textSize="12dp"
-                        android:textColor="#666666"
-                        android:paddingVertical="2dp"
-                        android:background="#A9A9A9"
-                        ></TextView>
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="账户"-->
+<!--                        android:textSize="12dp"-->
+<!--                        android:paddingVertical="2dp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textColor="#FFFFFF"-->
+<!--                        ></TextView>-->
                 </LinearLayout>
                 <!--账户，点击会查看该账户所有信件-->
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/user_account"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#A9A9A9"
                     >
 
                 </androidx.recyclerview.widget.RecyclerView>

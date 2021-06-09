@@ -3,12 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/fragment"
-    android:background="#A9A9A9"
+    android:background="@drawable/main"
     >
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#A9A9A9"
         >
         <ImageView
             android:id="@+id/button_back"
@@ -40,14 +39,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="#FFFFFF"
                 android:layout_marginTop="15dp"
                 >
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/user_list"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#A9A9A9"
                     >
                 </androidx.recyclerview.widget.RecyclerView>
                 <LinearLayout
@@ -62,7 +59,6 @@
                         android:layout_height="50dp"
                         android:padding="15dp"
                         android:src="@drawable/ic_plus"
-                        android:background="#A9A9A9"
                         >
 
                     </ImageView>
@@ -73,7 +69,6 @@
                         android:textColor="#FFFFFF"
                         android:layout_weight="1"
                         android:paddingVertical="15dp"
-                        android:background="#A9A9A9"
                         >
 
                     </TextView>
@@ -82,7 +77,6 @@
                         android:layout_height="50dp"
                         android:paddingVertical="18dp"
                         android:src="@drawable/ic_right_arrow"
-                        android:background="#A9A9A9"
                         >
 
                     </ImageView>

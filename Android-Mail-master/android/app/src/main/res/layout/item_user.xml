@@ -6,33 +6,37 @@
     android:background="@drawable/mailbox_selector"
     android:gravity="center"
     >
+
     <TextView
         android:id="@+id/username"
-        android:layout_width="wrap_content"
+        android:layout_width="336dp"
         android:layout_height="wrap_content"
-        android:text="UserAddress"
         android:layout_weight="1"
-        android:textColor="#FFFFFF"
-        android:background="#A9A9A9"
-        android:paddingLeft="15dp"
         android:paddingVertical="15dp"
-        >
-    </TextView>
+        android:paddingLeft="15dp"
+        android:text="UserAddress"
+        android:textColor="#FFFFFF"
+        android:background="#55000000"
+        ></TextView>
+
     <TextView
         android:id="@+id/right_text"
+        android:paddingTop="17dp"
+        android:paddingLeft="5dp"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
         android:visibility="gone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        >
-
-    </TextView>
+        android:textColor="#FFFFFF"
+        android:background="#55000000"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        ></TextView>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:paddingVertical="18dp"
         android:src="@drawable/ic_right_arrow"
+        android:background="#55000000"
         >
-
     </ImageView>
 </LinearLayout>

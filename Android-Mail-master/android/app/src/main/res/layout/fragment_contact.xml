@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A9A9A9"
+    android:background="@drawable/main"
     >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@drawable/border_bottom_1px_graydark"
+        android:background="@drawable/border_bottom_1px"
         >
         <ImageView
             android:id="@+id/button_back"
@@ -42,6 +42,7 @@
             android:paddingHorizontal="10dp"
             android:src="@drawable/ic_add_user"></ImageView>
     </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/contact_list"
         android:layout_width="match_parent"

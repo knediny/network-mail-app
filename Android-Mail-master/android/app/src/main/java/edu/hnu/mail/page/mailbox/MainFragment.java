@@ -321,7 +321,7 @@ public class MainFragment extends Fragment implements MailBoxContract.View {
         getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Toast.makeText(getContext(), "加载错误,请检查网络", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "刷新状态~", Toast.LENGTH_SHORT).show();
                 ptrClassicFrameLayout.refreshComplete();
                 topLoading.setVisibility(View.GONE);
                 topText.setVisibility(View.VISIBLE);

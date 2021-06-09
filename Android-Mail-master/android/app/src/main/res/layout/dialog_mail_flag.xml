@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#A9A9A9"
     android:paddingVertical="15dp"
+    android:background="#000000"
     >
     <TextView
         android:id="@+id/second"
@@ -14,6 +14,7 @@
         android:gravity="center"
         android:paddingVertical="15dp"
         android:background="@drawable/border_bottom_1px"
+        android:textStyle="bold"
         ></TextView>
     <TextView
         android:id="@+id/first"
@@ -21,6 +22,7 @@
         android:layout_height="wrap_content"
         android:text="标记收藏"
         android:textColor="#FFFFFF"
+        android:textStyle="bold"
         android:gravity="center"
         android:paddingVertical="15dp"
         ></TextView>

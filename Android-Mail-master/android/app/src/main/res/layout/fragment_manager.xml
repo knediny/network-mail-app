@@ -3,27 +3,27 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/fragment"
-    android:background="#A9A9A9"
+    android:background="@drawable/main"
     >
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         >
+
         <ImageView
             android:id="@+id/button_back"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:padding="15dp"
-            android:src="@drawable/ic_left_arrow"
-            >
-        </ImageView>
+            android:src="@drawable/ic_left_arrow"></ImageView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="管理员"
-            android:textColor="#FFFFFF"
-            >
+            android:textColor="#FFFFFF">
 
         </TextView>
         <!--        <TextView-->
@@ -39,6 +39,7 @@
         <!--        </TextView>-->
 
     </RelativeLayout>
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -66,12 +67,15 @@
                         android:layout_height="wrap_content"
                         android:text="服务器管理"
                         android:textColor="#FFFFFF"
+                        android:textStyle="bold"
                         ></TextView>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="#51FFFFFF"
+                    >
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -79,7 +83,9 @@
                         android:layout_weight="1"
                         android:paddingHorizontal="15dp"
                         android:paddingVertical="15dp"
-                        android:text="SMTP服务器状态"></TextView>
+                        android:text="SMTP服务器状态"
+                        android:textColor="#FFFFFF"
+                        ></TextView>
 
                     <Switch
                         android:id="@+id/smtp_run_state_switch"
@@ -95,7 +101,9 @@
                         android:layout_weight="1"
                         android:paddingHorizontal="15dp"
                         android:paddingVertical="15dp"
-                        android:text="POP服务器状态"></TextView>
+                        android:text="POP服务器状态"
+                        android:textColor="#FFFFFF"
+                        ></TextView>
 
                     <Switch
                         android:id="@+id/pop_run_state_switch"
@@ -119,12 +127,16 @@
                         android:paddingHorizontal="15dp"
                         android:paddingVertical="15dp"
                         android:textColor="#FFFFFF"
-                        android:text="服务器配置"></TextView>
+                        android:text="服务器配置"
+                        android:textStyle="bold"
+                        android:background="@drawable/border_bottom_1px"
+                        ></TextView>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:src="@drawable/ic_right_arrow"
                         android:paddingVertical="18dp"
+                        android:background="@drawable/border_bottom_1px"
                         ></ImageView>
                 </LinearLayout>
                 <LinearLayout
@@ -140,12 +152,16 @@
                         android:paddingHorizontal="15dp"
                         android:paddingVertical="15dp"
                         android:textColor="#FFFFFF"
-                        android:text="日志管理"></TextView>
+                        android:textStyle="bold"
+                        android:text="日志管理"
+                        android:background="@drawable/border_bottom_1px"
+                        ></TextView>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:src="@drawable/ic_right_arrow"
                         android:paddingVertical="18dp"
+                        android:background="@drawable/border_bottom_1px"
                         ></ImageView>
                 </LinearLayout>
                 <LinearLayout
@@ -161,12 +177,15 @@
                         android:paddingHorizontal="15dp"
                         android:paddingVertical="15dp"
                         android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:background="@drawable/border_bottom_1px"
                         android:text="群发邮件"></TextView>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:src="@drawable/ic_right_arrow"
                         android:paddingVertical="18dp"
+                        android:background="@drawable/border_bottom_1px"
                         ></ImageView>
                 </LinearLayout>
             </LinearLayout>
@@ -190,6 +209,7 @@
                         android:paddingBottom="15dp"
                         android:layout_weight="1"
                         android:textColor="#FFFFFF"
+                        android:textStyle="bold"
                         ></TextView>
                     <ImageView
                         android:id="@+id/add_user"

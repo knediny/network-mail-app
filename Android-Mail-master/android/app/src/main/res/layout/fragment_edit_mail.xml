@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    android:background="#A9A9A9"
+    android:background="@drawable/main"
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,8 +17,9 @@
             android:layout_height="wrap_content"
             android:paddingHorizontal="15dp"
             android:paddingVertical="15dp"
-            android:textColor="#FFFFFF"
-            android:text="取消"></TextView>
+            android:textColor="#FC0000"
+            android:text="取消"
+            ></TextView>
         <LinearLayout
             android:id="@+id/mail_type"
             android:layout_width="wrap_content"
@@ -42,67 +43,74 @@
             android:text="发送"
             android:paddingVertical="15dp"
             android:paddingHorizontal="15dp"
-            android:textColor="#601e88E5"
+            android:textColor="#0F85DF"
             ></TextView>
     </LinearLayout>
+
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="50dp"
-        >
+        android:background="#000000FF">
+
         <LinearLayout
             android:id="@+id/send_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/border_bottom_1px"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="收件人:"
-                    android:paddingVertical="10dp"
                     android:paddingHorizontal="15dp"
-                    ></TextView>
+                    android:paddingVertical="10dp"
+                    android:text="收件人:"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"></TextView>
+
                 <edu.hnu.mail.ui.mails.MailCompleteTextView
                     android:id="@+id/to_email"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@null"
-                    android:textSize="16dp"
                     android:singleLine="true"
-                    >
-                </edu.hnu.mail.ui.mails.MailCompleteTextView>
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"></edu.hnu.mail.ui.mails.MailCompleteTextView>
+
                 <ImageView
                     android:id="@+id/select_contact"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_marginHorizontal="10dp"
                     android:paddingVertical="10dp"
-                    android:src="@drawable/ic_nav_mine"
-                    >
+                    android:src="@drawable/ic_nav_mine">
 
                 </ImageView>
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/collapse"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/border_bottom_1px"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="发件人:"
-                    android:paddingVertical="10dp"
                     android:paddingHorizontal="15dp"
-                    ></TextView>
+                    android:paddingVertical="10dp"
+                    android:text="发件人:"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"></TextView>
 
                 <TextView
                     android:id="@+id/from_email"
@@ -113,97 +121,102 @@
                     android:gravity="center|left"
                     android:singleLine="true"
                     android:text=" zwpride@hnu.edu.cn"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
                     android:textSize="16dp"></TextView>
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/expand"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility="gone"
-                >
+                android:visibility="gone">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/border_bottom_1px"
                     android:orientation="horizontal">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="抄送:"
-                        android:paddingVertical="10dp"
                         android:paddingHorizontal="15dp"
-                        ></TextView>
+                        android:paddingVertical="10dp"
+                        android:text="抄送:"></TextView>
+
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@null"
-                        android:textSize="16dp"
                         android:singleLine="true"
-                        >
-                    </EditText>
+                        android:textSize="16dp"></EditText>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/border_bottom_1px"
                     android:orientation="horizontal">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="密送:"
-                        android:paddingVertical="10dp"
                         android:paddingHorizontal="15dp"
-                        ></TextView>
+                        android:paddingVertical="10dp"
+                        android:text="密送:"></TextView>
+
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@null"
-                        android:textSize="16dp"
                         android:singleLine="true"
-                        >
-                    </EditText>
+                        android:textSize="16dp"></EditText>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/border_bottom_1px"
                     android:orientation="horizontal">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="发件人:"
-                        android:paddingVertical="10dp"
                         android:paddingHorizontal="15dp"
-                        ></TextView>
+                        android:paddingVertical="10dp"
+                        android:text="发件人:"></TextView>
+
                     <TextView
                         android:id="@+id/from_email_edit"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center|left"
-                        android:textSize="16dp"
-                        android:textColor="#FFFFFF"
                         android:singleLine="true"
-                        >
-                    </TextView>
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"></TextView>
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:background="@drawable/border_bottom_1px"
-                >
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="主题:"
-                    android:paddingVertical="10dp"
                     android:paddingHorizontal="15dp"
-                    ></TextView>
+                    android:paddingVertical="10dp"
+                    android:text="主题:"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"></TextView>
+
                 <EditText
                     android:id="@+id/send_subject"
                     android:layout_width="wrap_content"
@@ -211,25 +224,26 @@
                     android:layout_weight="1"
                     android:background="@null"
                     android:singleLine="true"
-                    android:textSize="16dp"
-                    >
-                </EditText>
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"></EditText>
             </LinearLayout>
+
             <ImageView
                 android:id="@+id/tmp_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"></ImageView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <edu.hnu.mail.util.RichEditor
                     android:id="@+id/richEditor"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:layout_marginHorizontal="15dp"
-                    android:paddingBottom="100dp"
-                    android:background="#A9A9A9"
-                    ></edu.hnu.mail.util.RichEditor>
+                    android:background="#44000000"
+                    android:paddingBottom="100dp"></edu.hnu.mail.util.RichEditor>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
@@ -268,16 +282,17 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_alignParentBottom="true"
+            android:background="#AAFFFFFF"
             >
             <!--底部工具栏-->
             <LinearLayout
                 android:id="@+id/bottom_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-
                 android:visibility="visible"
                 android:background="@drawable/bg_white_border_top_1px"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
                 <!--字体大小，可展开收缩-->
                 <LinearLayout
                     android:id="@+id/layout_font"

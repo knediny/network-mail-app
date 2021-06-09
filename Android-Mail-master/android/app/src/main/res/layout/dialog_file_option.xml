@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#A9A9A9"
-    android:paddingVertical="15dp"
-    >
+    android:background="#000000"
+    android:orientation="vertical"
+    android:paddingVertical="15dp">
+
     <TextView
         android:id="@+id/second"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="插入到正文"
-        android:textColor="#FFFFFF"
+        android:background="@drawable/border_bottom_1px"
         android:gravity="center"
         android:paddingVertical="15dp"
-        android:background="@drawable/border_bottom_1px"
+        android:text="插入到正文"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
         ></TextView>
+
     <TextView
         android:id="@+id/first"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="删除附件"
-        android:textColor="#FFFFFF"
         android:gravity="center"
         android:paddingVertical="15dp"
+        android:text="删除附件"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
         ></TextView>
 </LinearLayout>

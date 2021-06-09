@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:minWidth="300dp"
     android:layout_centerInParent="true"
-    android:background="#A9A9A9"
+    android:background="#000000"
     android:orientation="vertical"
     android:paddingHorizontal="20dp"
     >
@@ -17,6 +17,7 @@
         android:paddingVertical="20dp"
         android:textSize="20dp"
         android:textColor="#FFFFFF"
+        android:textStyle="bold"
         android:text="离开写邮件"
         ></TextView>
 
@@ -26,8 +27,9 @@
         android:layout_height="wrap_content"
         android:paddingBottom="5dp"
         android:textSize="16dp"
-        android:textColor="#707070"
+        android:textColor="#FFFFFF"
         android:text="已填写的邮件内容将丢失，或保存到草稿"
+        android:background="@drawable/border_bottom_1px"
         ></TextView>
 
     <LinearLayout
@@ -45,7 +47,7 @@
             android:layout_height="wrap_content"
             android:paddingVertical="20dp"
             android:paddingHorizontal="14dp"
-            android:textColor="#0582DB"
+            android:textColor="#0F85DF"
             android:text="取消"></TextView>
         <TextView
             android:id="@+id/button_save"
@@ -54,7 +56,7 @@
             android:paddingVertical="20dp"
             android:paddingHorizontal="14dp"
             android:visibility="gone"
-            android:textColor="#0582DB"
+            android:textColor="#0F85DF"
             android:text="保存草稿"></TextView>
         <TextView
             android:id="@+id/button_confirm"
@@ -62,7 +64,7 @@
             android:layout_height="wrap_content"
             android:paddingVertical="20dp"
             android:paddingHorizontal="14dp"
-            android:textColor="#F84F4A"
+            android:textColor="#FC0000"
             android:text="离开"></TextView>
     </LinearLayout>
 </LinearLayout>

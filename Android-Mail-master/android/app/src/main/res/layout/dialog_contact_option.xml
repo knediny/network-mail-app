@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#A9A9A9"
+    android:background="#000000"
     >
     <LinearLayout
         android:id="@+id/button_write"
@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:textColor="#FFFFFF"
             android:text="写邮件"
+            android:textStyle="bold"
             >
         </TextView>
     </LinearLayout>
@@ -32,6 +33,7 @@
             android:layout_height="wrap_content"
             android:text="删除联系人"
             android:textColor="#FFFFFF"
+            android:textStyle="bold"
             >
         </TextView>
     </LinearLayout>

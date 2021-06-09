@@ -10,5 +10,5 @@
     android:ellipsize="marquee"
     android:textSize="18.0dip"
     android:fadingEdge="horizontal"
-    android:textColor="#050505"
+    android:textColor="#FFFFFF"
     />

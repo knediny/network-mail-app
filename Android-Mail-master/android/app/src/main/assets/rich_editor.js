@@ -15,7 +15,7 @@
  */
 
  var msize = 3,
-   mcolor = '#FFFFFF',
+   mcolor = '#050505',
    malign = 'left',
    mlist = false,
    mbold  = false,
@@ -357,10 +357,10 @@ RE.enabledEditingItems = function(e) {
             list.push('align:left')
         }
         //没检测到color 但之前颜色不是原始色black
-        if(!checkColor && mcolor != '#FFFFFFF'){
+        if(!checkColor && mcolor != '#050505'){
             console.log('没检测到color: 原始color为：' + mcolor)
-            mcolor = '#FFFFFF'
-            list.push('color:#FFFFFF')
+            mcolor = '#050505'
+            list.push('color:#050505')
         }
     }catch(e){
     }
