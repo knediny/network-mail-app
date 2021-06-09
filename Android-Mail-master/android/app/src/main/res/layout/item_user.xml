@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:text="UserAddress"
         android:layout_weight="1"
-        android:textColor="#050505"
+        android:textColor="#FFFFFF"
+        android:background="#A9A9A9"
         android:paddingLeft="15dp"
         android:paddingVertical="15dp"
         >

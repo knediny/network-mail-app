@@ -107,7 +107,6 @@ public class ServerFragment extends Fragment {
         HttpUtil.httpGet(DefaultServer.ADMIN_HOST + "/server", new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                makeToast("网络错误");
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -137,7 +136,6 @@ public class ServerFragment extends Fragment {
                             }
                         });
                     }else{
-                        makeToast("错误代码："+jsonObject.getInt("status"));
                     }
                 }catch (Exception e){
                     e.printStackTrace();

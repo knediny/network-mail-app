@@ -125,7 +125,7 @@ public class EditMailFragment extends Fragment implements EditMailContract.View,
         private ImageView buttonColor;
         private LinearLayout expandColor;
         private RadioGroup radioGroupColor;
-        private final String black = "#050505",blue = "#3458DB", red = "#FF0000", gray = "#707070";
+        private final String black = "#FFFFFF",blue = "#3458DB", red = "#FF0000", gray = "#707070";
         //其他
         private LinearLayout layoutOther;
         private ImageView buttonBold;
@@ -270,7 +270,7 @@ public class EditMailFragment extends Fragment implements EditMailContract.View,
         richEditor = v.findViewById(R.id.richEditor);
         richEditor.setAlignLeft();
         richEditor.setFontSize(4);
-        richEditor.setTextColor(Color.parseColor("#050505"));
+        richEditor.setTextColor(Color.parseColor("#FFFFFF"));
 
 
         scrollView = v.findViewById(R.id.scrollView);
@@ -535,7 +535,7 @@ public class EditMailFragment extends Fragment implements EditMailContract.View,
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId){
                     case R.id.radio_black:
-                        richEditor.setTextColor(Color.parseColor("#050505"));
+                        richEditor.setTextColor(Color.parseColor("#FFFFFF"));
                         break;
                     case R.id.radio_blue:
                         richEditor.setTextColor(Color.parseColor("#3458DB"));

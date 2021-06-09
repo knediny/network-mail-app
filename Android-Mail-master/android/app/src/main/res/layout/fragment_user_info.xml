@@ -89,7 +89,7 @@
         android:id="@+id/layout_server"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+
         android:layout_marginBottom="15dp"
         android:visibility="gone"
         >
@@ -116,7 +116,6 @@
             android:id="@+id/layout_manager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
             android:layout_marginBottom="15dp"
             android:visibility="gone"
             >
@@ -125,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="管理员功能"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:paddingVertical="15dp"
                 android:paddingHorizontal="15dp"
                 >

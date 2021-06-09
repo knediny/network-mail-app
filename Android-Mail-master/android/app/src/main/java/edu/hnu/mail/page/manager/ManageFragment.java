@@ -203,13 +203,13 @@ public class ManageFragment extends Fragment {
         userListAdapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                // TODO: 2020-05-20 弹出对话框，有删除用户功能
-                showOptionDialog(position);
+//                showOptionDialog(position);
             }
         });
         popSwitch = root.findViewById(R.id.pop_run_state_switch);
         smtpSwitch = root.findViewById(R.id.smtp_run_state_switch);
         layoutLog = root.findViewById(R.id.layout_log);
+        layoutGroup = root.findViewById(R.id.layout_group);
         layoutServer = root.findViewById(R.id.layout_server);
         buttonAddUser = root.findViewById(R.id.add_user);
     }

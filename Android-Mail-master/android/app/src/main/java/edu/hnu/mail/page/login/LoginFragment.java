@@ -129,7 +129,6 @@ public class LoginFragment extends Fragment {
         HttpUtil.httpGet(DefaultServer.ADMIN_HOST + "/server", new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                makeToast("网络错误");
                 e.printStackTrace();
             }
 
@@ -147,7 +146,6 @@ public class LoginFragment extends Fragment {
                         });
                     }
                 }catch (Exception e){
-                    makeToast("网络错误");
                     e.printStackTrace();
                 }
             }
@@ -484,7 +482,6 @@ public class LoginFragment extends Fragment {
                         return;
                     }
                     makeToast("配置成功");
-                    // TODO: 2020/4/23 此处要将user存入userDao持久化数据，并写入UserInfo
                     successLogin(userName,passWord,0);
                 } catch (IOException e) {
                     e.printStackTrace();

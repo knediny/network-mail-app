@@ -161,7 +161,6 @@ public class ServerFragment extends Fragment {
                                 return;
                             }
                             makeToast("配置成功");
-                            // TODO: 2020/4/23 此处要将user存入userDao持久化数据，并写入UserInfo
                             successLogin(popUserNameText,popPassWordText,smtpUserNameText,smtpPassWordText);
                         } catch (IOException e) {
                             e.printStackTrace();

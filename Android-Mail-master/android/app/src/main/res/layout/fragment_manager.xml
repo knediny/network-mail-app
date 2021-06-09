@@ -8,7 +8,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#A9A9A9"
         >
         <ImageView
             android:id="@+id/button_back"
@@ -27,17 +26,17 @@
             >
 
         </TextView>
-<!--        <TextView-->
-<!--            android:id="@+id/button_change_mail"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:gravity="center"-->
-<!--            android:paddingHorizontal="15dp"-->
-<!--            android:layout_alignParentRight="true"-->
-<!--            android:textColor="#0F85DF"-->
-<!--            android:text="其它邮箱"-->
-<!--            >-->
-<!--        </TextView>-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/button_change_mail"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:gravity="center"-->
+        <!--            android:paddingHorizontal="15dp"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:textColor="#0F85DF"-->
+        <!--            android:text="其它邮箱"-->
+        <!--            >-->
+        <!--        </TextView>-->
 
     </RelativeLayout>
     <androidx.core.widget.NestedScrollView
@@ -53,102 +52,81 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:orientation="vertical"
-                android:background="#FFFFFF"
                 >
-
-                <LinearLayout
-                    android:id="@+id/layout_server"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="?android:attr/selectableItemBackground">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#A9A9A9"
-                        android:paddingHorizontal="15dp"
-                        android:paddingVertical="15dp"
-                        android:text="服务器配置"
-                        android:textColor="#FFFFFF"></TextView>
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:background="#A9A9A9"
-                        android:paddingVertical="18dp"
-                        android:src="@drawable/ic_right_arrow"></ImageView>
-                </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="15dp"
                     android:paddingTop="10dp"
                     android:paddingBottom="15dp"
-                    android:background="#A9A9A9"
+                    android:background="@drawable/border_bottom_1px"
                     >
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="服务器管理"
                         android:textColor="#FFFFFF"
-                        android:background="#A9A9A9"
                         ></TextView>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#A9A9A9"
-
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:paddingHorizontal="15dp"
-                        android:paddingVertical="15dp"
-                        android:text="POP服务器状态"
-                        android:textColor="#000000"
-                        android:background="#A9A9A9"
-                        ></TextView>
-                    <Switch
-                        android:id="@+id/pop_run_state_switch"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="17dp"
-                        android:background="#A9A9A9"
-                        >
-
-                    </Switch>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:paddingHorizontal="15dp"
-                        android:paddingVertical="15dp"
-                        android:text="SMTP服务器状态"
-                        android:background="#A9A9A9"
-                        android:textColor="#000000"
-                        ></TextView>
-
-                    <Switch
-                        android:id="@+id/smtp_run_state_switch"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="17dp">
-
-                    </Switch>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="15dp"
+                        android:text="SMTP服务器状态"></TextView>
+
+                    <Switch
+                        android:id="@+id/smtp_run_state_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp">
+
+                    </Switch>
+
+                    <TextView
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="15dp"
+                        android:text="POP服务器状态"></TextView>
+
+                    <Switch
+                        android:id="@+id/pop_run_state_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp">
+
+                    </Switch>
                 </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/layout_server"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="15dp"
+                        android:textColor="#FFFFFF"
+                        android:text="服务器配置"></TextView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_right_arrow"
+                        android:paddingVertical="18dp"
+                        ></ImageView>
+                </LinearLayout>
                 <LinearLayout
                     android:id="@+id/layout_log"
                     android:layout_width="match_parent"
@@ -162,32 +140,47 @@
                         android:paddingHorizontal="15dp"
                         android:paddingVertical="15dp"
                         android:textColor="#FFFFFF"
-                        android:text="日志管理"
-                        android:background="#A9A9A9"
-                        ></TextView>
+                        android:text="日志管理"></TextView>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:src="@drawable/ic_right_arrow"
                         android:paddingVertical="18dp"
-                        android:background="#A9A9A9"
-
                         ></ImageView>
                 </LinearLayout>
-
+                <LinearLayout
+                    android:id="@+id/layout_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="15dp"
+                        android:textColor="#FFFFFF"
+                        android:text="群发邮件"></TextView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_right_arrow"
+                        android:paddingVertical="18dp"
+                        ></ImageView>
+                </LinearLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:orientation="vertical"
-                android:background="#FFFFFF"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="15dp"
-                    android:background="#A9A9A9"
+                    android:background="@drawable/border_bottom_1px"
                     >
                     <TextView
                         android:layout_width="wrap_content"
@@ -197,16 +190,13 @@
                         android:paddingBottom="15dp"
                         android:layout_weight="1"
                         android:textColor="#FFFFFF"
-                        android:background="#A9A9A9"
                         ></TextView>
                     <ImageView
                         android:id="@+id/add_user"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:paddingVertical="10dp"
-                        android:src="@drawable/ic_add_user"
-                        android:background="#A9A9A9"
-                        >
+                        android:src="@drawable/ic_add_user">
 
                     </ImageView>
                 </LinearLayout>
@@ -215,7 +205,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="15dp"
-                    android:background="#A9A9A9"
                     >
 
                 </androidx.recyclerview.widget.RecyclerView>

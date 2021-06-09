@@ -152,7 +152,7 @@ public class MailListActivity extends AppCompatActivity implements MailListContr
                 mailBoxName.setText("草稿箱");
                 break;
             case MailType.FLAG:
-                mailBoxName.setText("星标邮件");
+                mailBoxName.setText("收藏邮件");
                 break;
             case MailType.SENT:
                 mailBoxName.setText("已发送");
