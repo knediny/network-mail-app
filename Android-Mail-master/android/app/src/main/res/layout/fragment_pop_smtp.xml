@@ -176,7 +176,7 @@
                     android:background="@null"
                     android:paddingVertical="10dp"
                     android:textSize="16dp"
-                    android:text=" 110"
+                    android:text="110"
                     android:textColor="#FFFFFF"
                     android:singleLine="true"
                     >
@@ -308,7 +308,7 @@
                     android:background="@null"
                     android:paddingVertical="10dp"
                     android:textSize="16dp"
-                    android:text=" 25"
+                    android:text="25"
                     android:singleLine="true"
                     android:textColor="#FFFFFF"
                     >
